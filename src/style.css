@@ -1,0 +1,58 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-color: #F2F0E9;
+  --secondary-color: #000000;
+  --text-color: #232320;
+  --secondary-text-color: #8a8989;
+  --font-size-large: 18px;
+  --font-size-small: 18px;
+}
+
+@font-face {
+  font-family: 'neutralFace-normal';
+  src: url(assets/fonts/NeutralFace.otf);
+  font-weight: 100 900;
+}  
+
+@font-face {
+  font-family: 'neutralFace-bold';
+  src: url(assets/fonts/NeutralFace-Bold.otf);
+  font-weight: 100 900;
+}  
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'neutralFace-normal';
+  letter-spacing: 2px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul{
+  list-style: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+   
+
+.hover__link__white{
+  color: var(--secondary-text-color);
+  transition: color 0.2s ease-in;
+}
+
+.hover__link__white:hover {
+  color: var(--primary-color);
+}
