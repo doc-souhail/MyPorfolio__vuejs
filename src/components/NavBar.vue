@@ -3,7 +3,7 @@
 
 <template>
 <nav class="container">
-  <ul class="d-flex justify-content-between align-items-center py-3">
+  <ul class="d-flex justify-content-between align-items-center ps-0 py-3">
     <li class="logo__name position-relative">
       <span class="time text-nowrap" id="date"></span>
       <a href="#">
@@ -29,7 +29,7 @@
       <p>@moooore__protein</p>
     </div>
     <div>
-      <div class="text-capitalize">Freelancer Avaliable 🫡</div>
+      <div class="text-capitalize">Web Developer & UI Designer 🫡</div>
     </div>
   </div>
 </div>
@@ -39,6 +39,8 @@
 
 .menu__burger{
   width: 50px;
+  position: relative;
+  z-index: 1000;
 }
 .logo__name{
   width: 60px;
@@ -57,15 +59,16 @@
   transition: opacity 0.5s ease;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  width: 500px;
-  height: 400px;
+  width: 60%;
+  height: 55%;
   position: absolute;
   right: 180px;
   top: 20px;
+  z-index: 1000;
 }
 
 .modale_body ul li a{
-  font-size: 35px;
+  font-size: 55px;
 }
 
 .modale_footer{

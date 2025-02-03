@@ -3,7 +3,8 @@
 :root {
   --primary-color: #F2F0E9;
   --secondary-color: #000000;
-  --text-color: #232320;
+  --text-color-1: #232320;
+  --text-color-2: #fff;
   --secondary-text-color: #8a8989;
   --font-size-large: 18px;
   --font-size-small: 18px;
@@ -18,8 +19,28 @@
 @font-face {
   font-family: 'neutralFace-bold';
   src: url(assets/fonts/NeutralFace-Bold.otf);
-  font-weight: 100 900;
-}  
+}
+
+@font-face {
+  font-family: 'nohemiThin';
+  src: url(assets/fonts/Nohemi-Thin-BF6438cc57e2011.woff);
+}
+
+@font-face {
+  font-family: 'nohemiRegular';
+  src: url(assets/fonts/Nohemi-Regular-BF6438cc4d0e493.ttf);
+}
+
+@font-face {
+  font-family: 'nohemiMedium';
+  src: url(assets/fonts/Nohemi-Medium-BF6438cc5883899.ttf);
+}
+
+@font-face {
+  font-family: 'nohemiBold';
+  src: url(assets/fonts/Nohemi-Bold-BF6438cc587b5b5.ttf);
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -28,13 +49,15 @@ html {
 body{
   background-color: var(--primary-color);
   color: var(--text-color);
-  font-family: 'neutralFace-normal';
+  font-family: 'neutralFace-normal', sans-serif;
   letter-spacing: 2px;
 }
 
 a{
+  position: relative;
   text-decoration: none;
   color: var(--text-color);
+  z-index: 1000;
 }
 
 ul{

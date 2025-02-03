@@ -4,12 +4,15 @@ import App from './App.vue'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 createApp(App).mount('#app')
 
-const circle = document.querySelector(".circle");
-const bigCircle = document.querySelector(".big-circle");
-document.addEventListener("mousemove", (e) => {
-    circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-    bigCircle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+const mouses = document.querySelectorAll(".mouse");
+
+window.addEventListener("mousemove", (e) => {
+    mouses.forEach((mouse) => {
+        mouse.style.top = e.y + "px";
+        mouse.style.left = e.x + "px";
+    });
 });
+
 
 function getFormattedDate() {
     const options = {
