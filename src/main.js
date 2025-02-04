@@ -31,3 +31,4 @@ function toggleModale(){
     modale.classList.toggle("active_modale");    
 }
 button.addEventListener("click",toggleModale)
+
