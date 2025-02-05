@@ -110,10 +110,10 @@ import Footer from './components/Footer.vue';
   <div class="border border-dark-subtle py-3">
     <a href="https://github.com/doc-suell/instaGame" target=”_blank”>
       <div class="d-flex justify-content-between px-5">
-        <h4 class="text-decoration-underline">Portfolio with Bootstrap</h4>
+        <h4 class="text-decoration-underline">Instagrame clone</h4>
         <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
       </div>
-      <p class="px-5">A responsive personal portfolio built using Bootstrap for styling and layout.</p>
+      <p class="px-5">A project that draws inspiration from Instagram. Using PHP for backend and Vue.Js in frontend</p>
     </a>
   </div>
 </section>
