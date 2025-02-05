@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "portfolioproj": "file:",
     "vue": "^3.5.13"
   },
   "devDependencies": {
