@@ -66,24 +66,83 @@ import Footer from './components/Footer.vue';
   </div>
 </section>
 
-<!------------  ABOUT SECTION ------------>
-<section class="works__section">
+<!------------  WORKs SECTION ------------>
+<section class="works__section my-5">
   <div class="container">
     <h3 class="text-center pb-5">Here are some of the projects I’ve worked </h3>
   </div>
-  <div>
-    <div class="border border-dark-subtle py-3">
-      <div class="d-flex">
-        <h3>Spring-boot-OpenAI</h3>
+  <div class="border border-dark-subtle py-3">
+    <a href="https://github.com/doc-souhail/Spring-boot-OpenAI" target=”_blank”>
+      <div class="d-flex justify-content-between px-5">
+        <h4 class="text-decoration-underline">Spring-boot-OpenAI</h4>
         <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
       </div>
-      <p>A chatbot using Spring AI and OpenAI API to generate smart responses</p>
-    </div>
+      <p class="px-5">A chatbot using Spring AI and OpenAI API to generate smart responses</p>
+    </a>
+  </div>
+  <div class="border border-dark-subtle py-3">
+    <a href="https://github.com/doc-souhail/Flappy-bird-Game-Java" target=”_blank”>
+      <div class="d-flex justify-content-between px-5">
+        <h4 class="text-decoration-underline">Flappy-Bird-Game-Java</h4>
+        <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
+      </div>
+      <p class="px-5">A Java remake of Flappy Bird.</p>
+    </a>
+  </div>
+  <div class="border border-dark-subtle py-3">
+    <a href="https://github.com/doc-souhail/Snake-Game-Java" target=”_blank”>
+      <div class="d-flex justify-content-between px-5">
+        <h4 class="text-decoration-underline">Snake-Game-Java</h4>
+        <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
+      </div>
+      <p class="px-5">A classic Snake game built in Java with simple controls.</p>
+    </a>
+  </div>
+  <div class="border border-dark-subtle py-3">
+    <a href="https://github.com/doc-souhail/Portfolio_1" target=”_blank”>
+      <div class="d-flex justify-content-between px-5">
+        <h4 class="text-decoration-underline">Portfolio with Bootstrap</h4>
+        <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
+      </div>
+      <p class="px-5">A responsive personal portfolio built using Bootstrap for styling and layout.</p>
+    </a>
+  </div>
+  <div class="border border-dark-subtle py-3">
+    <a href="https://github.com/doc-suell/instaGame" target=”_blank”>
+      <div class="d-flex justify-content-between px-5">
+        <h4 class="text-decoration-underline">Portfolio with Bootstrap</h4>
+        <img class="about__section_icons" src="./assets/imgs/arrowForLinks.svg" alt="arrow">
+      </div>
+      <p class="px-5">A responsive personal portfolio built using Bootstrap for styling and layout.</p>
+    </a>
   </div>
 </section>
+  <section class="seo__section">
+    <div style="font-size: 5px; color: transparent;">
+      <p class="user-select-none">
+        Développeur web full-stack à Bordeaux, spécialisé en Java, Spring Boot,
+        Angular et Vue.js. J’aide les entreprises à concevoir des solutions digitales modernes et performantes.
+      </p>
+      <p class="user-select-none">
+        Passionné par le développement web,
+        je crée des applications et sites internet sur mesure en utilisant des technologies comme Java,
+        Spring Boot et Vue.js
+      </p>
+      <p class="user-select-none">
+        Besoin d’un développeur full-stack à Bordeaux ?
+        J’accompagne les entreprises et startups dans la réalisation de leurs projets web avec une approche agile et moderne
+      </p>
+      <p class="user-select-none">
+        Création de sites web et applications sur mesure en Java, Angular et Vue.js, wordpress, webflow no code.
+        Expert en développement full-stack, je conçois des solutions performantes et évolutives
+      </p>
+      <p class="user-select-none">
+        Développeur expérimenté en Java, Spring Boot et frameworks modernes,
+        je réalise des projets web de A à Z, du design à la mise en ligne
+      </p>
 
-
-
+    </div>
+  </section>
 <Footer></Footer>
 <Cursor></Cursor>
 </template>
@@ -139,13 +198,17 @@ h3{
 }
 
 .about__section_icons{
-  width: 50px;
+  width: 40px;
 }
 
 /* -------------- WORKS SECTION-------------- */
 
 .works__section h3{
-  font-size: 40px;
+  font-size: 70px;
+}
+
+.works__section p{
+  font-size: 11px;
 }
 
 
