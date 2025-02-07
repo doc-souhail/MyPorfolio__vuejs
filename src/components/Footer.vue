@@ -5,7 +5,7 @@
 <template>
 <footer class="footer">
   <div class="container d-flex flex-column justify-content-end  py-5">
-    <h2 class="mb-5 pb-5">Let's Contact 😎</h2>
+    <h2 data-aos="zoom-in" class="mb-5 pb-5">Let's Contact 😎</h2>
     <div class="row mt-5 pt-5">
       <div class="col border-top me-3 border-opacity-25">
         <h3 class="py-3 fs-1">SOCIAL</h3>

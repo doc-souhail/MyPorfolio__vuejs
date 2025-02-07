@@ -2,7 +2,11 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-createApp(App).mount('#app')
+createApp(App).mount('#app');
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+import Swal from 'sweetalert2';
 
 const mouses = document.querySelectorAll(".mouse");
 document.getElementById("date").textContent = getFormattedDate();
@@ -113,7 +117,7 @@ const projects = [
 
 skills.forEach((skill, index) => {
     const skillHTML = `
-      <div class="border border-dark-subtle py-3">
+      <div data-aos="fade-right" class="border border-dark-subtle py-3">
         <div class="d-flex justify-content-between px-5">
           <h3>${skill.title}</h3>
           <img style="width: 40px;" class="z-3 toggle-btn" data-index="${index}"
@@ -127,7 +131,7 @@ skills.forEach((skill, index) => {
 
 projects.forEach(project => {
     const projectHTML = `
-      <div class="border border-dark-subtle py-3">
+      <div data-aos="fade-right" class="border border-dark-subtle py-3">
         <a href="${project.link}" target="_blank">
           <div class="d-flex justify-content-between px-5">
             <h4 class="text-decoration-underline">${project.title}</h4>
@@ -158,5 +162,11 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
         desc.style.display = isVisible ? "none" : "block";
 
     });
+});
+
+Swal.fire({
+    title: "Hello there 🫡",
+    text: "Portfolio still in pregresse",
+    icon: "warning",
 });
 

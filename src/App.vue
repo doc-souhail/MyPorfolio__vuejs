@@ -11,9 +11,9 @@ import ModalProgress from "./components/ModalProgress.vue";
 <!------------  HERO SECTION ------------>
 <section class="container hero__section vh-100">
   <div class="text-center">
-    <h2>souhail</h2>
+    <h2 data-aos="zoom-in">SOUHAIL</h2>
     <span>Web Developer & UI Designer 🫡.</span>
-    <h2 class="mt-2">naji</h2>
+    <h2 data-aos="zoom-in" class="mt-2">naji</h2>
   </div>
   <div class="scroll__hero d-flex justify-content-center align-items-center">
     <span >Scroll to explore</span>
@@ -22,7 +22,7 @@ import ModalProgress from "./components/ModalProgress.vue";
 
 <!------------  ABOUT SECTION ------------>
 <section class="container about__section">
-  <h3 class="text-center pb-5">I design and build interactive web experiences that elevate brands.</h3>
+  <h3 data-aos="zoom-in" class="text-center pb-5">I design and build interactive web experiences that elevate brands.</h3>
 </section>
 <section>
   <div class="py-5 about__section_skills" id="skills-container"></div>
@@ -31,7 +31,7 @@ import ModalProgress from "./components/ModalProgress.vue";
 <!------------  WORKs SECTION ------------>
 <section class="works__section my-5">
   <div class="container">
-    <h3 class="text-center pb-5">Here are some of the projects I’ve worked </h3>
+    <h3 data-aos="zoom-in" class="text-center pb-5">Here are some of the projects I’ve worked </h3>
   </div>
   <div id="projects-container"></div>
 </section>
@@ -39,7 +39,6 @@ import ModalProgress from "./components/ModalProgress.vue";
     <div style="font-size: 5px; color: transparent;" id="seo-container">
     </div>
   </section>
-
 
 <Footer></Footer>
 <Cursor></Cursor>
