@@ -166,7 +166,7 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
 
 Swal.fire({
     title: "Hello there 🫡",
-    text: "Portfolio still in pregresse",
+    text: "Portfolio still in progress",
     icon: "warning",
 });
 
