@@ -19,7 +19,18 @@ import ModalProgress from "./components/ModalProgress.vue";
     <span >Scroll to explore</span>
   </div>
 </section>
-
+<section class="progress-modal">
+  <div>
+    <div class="d-flex justify-content-between align-items-center pb-3">
+      <h3 class="mb-0">🚧 Work in Progress 🚧</h3>
+      <img id="bugg-modal-close" src="./assets/imgs/noun-plus-6826217.svg" alt="">
+    </div>
+    <p>
+      This portfolio is still under development! Some features may be incomplete or missing,
+      feel free to explore what's already available.
+    </p>
+  </div>
+</section>
 <!------------  ABOUT SECTION ------------>
 <section class="container about__section">
   <h3 data-aos="zoom-in" class="text-center pb-5">I design and build interactive web experiences that elevate brands.</h3>
@@ -104,6 +115,32 @@ h3{
   font-size: 11px;
 }
 
+.progress-modal{
+  position: absolute;
+  width: 400px;
+  background-color: #fff;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.progress-modal h3{
+  font-size: 12px;
+}
+
+.progress-modal img{
+  width: 20px;
+  rotate: 45deg;
+}
+
+.progress-modal p{
+  font-size: 9px;
+}
+.close-modal{
+  display: none;
+}
 
 
 </style>

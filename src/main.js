@@ -15,6 +15,8 @@ const modale = document.getElementById("modale")
 const containerProjects = document.getElementById("projects-container");
 const skillsContainer = document.getElementById("skills-container");
 const seoContainer = document.getElementById("seo-container");
+const buggModalClose = document.getElementById("bugg-modal-close");
+const progresseModal = document.getElementsByClassName("progress-modal");
 
 
 
@@ -164,9 +166,24 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
     });
 });
 
-Swal.fire({
-    title: "Hello there 🫡",
-    text: "Portfolio still in progress",
-    icon: "warning",
-});
+// Swal.fire({
+//     title: "Hello there 🫡",
+//     text: "Portfolio still in progress",
+//     icon: "warning",
+// });
+
+
+buggModalClose.addEventListener('click', ()=>{
+    progresseModal.classList.add("close-modal");
+})
+
+function closeModalProgress() {
+    progresseModal.style.display = "none"; // Cache directement le modal
+    console.log("here");
+}
+
+buggModalClose.addEventListener('click', closeModalProgress);
+
+
+
 
